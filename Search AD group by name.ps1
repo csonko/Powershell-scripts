@@ -1,0 +1,2 @@
+#Import-Module ActiveDirectory
+Get-ADGroup -Filter {Name -like '*grpname*'}  -Properties * | select -property SamAccountName,Name,Description,DistinguishedName,CanonicalName,GroupCategory,GroupScope,whenCreated
